@@ -1,0 +1,7 @@
+---
+- name: uninstall multiple packages
+  hosts: all
+  become: true
+  tasks:
+  - name: remove packages
+    shell: apt-get remove --allow-remove-essential -y tree wget make git 

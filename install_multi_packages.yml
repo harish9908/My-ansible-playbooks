@@ -1,0 +1,16 @@
+---
+- name: install multiple packages
+  hosts: all
+  become: true
+  tasks:
+  - name: udate  packages
+    apt:
+     update_cache: yes
+  - name: install essential packages     
+    apt:
+      name:
+       - tree
+       - make
+       - telnet
+       - gzip
+      state: present

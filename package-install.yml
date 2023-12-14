@@ -5,5 +5,5 @@
   gather_facts: no
   tasks:
     - name: installing packages
-      yum:
+      apt:
        name: wget

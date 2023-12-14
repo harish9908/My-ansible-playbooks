@@ -5,5 +5,5 @@
   tasks:
   - name: Creating a directory
     file: 
-      path: /home/ansadmin/dir1
+      path: /root/ansible/directory1
       state: absent

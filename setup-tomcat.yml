@@ -17,21 +17,21 @@
 
   - name: Download Tomcat
     get_url:
-      url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.13/bin/apache-tomcat-10.1.13.tar.gz
+      url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.tar.gz
       dest: /opt
 
   - name: Extract tomcat tar file
     unarchive:
-      src: /opt/apache-tomcat-10.1.13.tar.gz
+      src: /opt/apache-tomcat-9.0.84.tar.gz
       dest: /opt
       remote_src: yes
 
   - name: Change permissions for a file(.sh file)
     file:
-      path: /opt/apache-tomcat-10.1.13/bin/startup.sh
+      path: /opt/apache-tomcat-9.0.84/bin/startup.sh
       mode: 0777
 
   - name: Execute .sh file to start tomcat service
     shell: nohup ./startup.sh
     args:
-      chdir: /opt/apache-tomcat-10.1.13/bin
+      chdir: /opt/apache-tomcat-9.0.84/bin

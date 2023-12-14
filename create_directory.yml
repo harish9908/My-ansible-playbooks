@@ -1,11 +1,11 @@
 ---
-- name: playbook for directory
+- name: creating a directory
   hosts: all
-  become: true
+  become: yes
   tasks:
-  - name: creating directory
+  - name: creating a directory
     file:
-     path: /home/ansible/demo
+     path: /root/ansible/directory1
      state: directory
      mode: 0755
-     owner: ansible
+     owner: root
