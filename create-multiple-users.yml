@@ -6,6 +6,6 @@
   - name: add a list of users
     user: name='{{item}}' state=present
     with_items:
-      - khan
-      - mrkhan
-      - majju
+      - hari01
+      - hari02
+      - hari03
