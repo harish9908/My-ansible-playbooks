@@ -5,7 +5,7 @@
   tasks:
   - name: creating a directory
     file:
-     path: /root/ansible/directory1
+     path: /home/ubuntu/directory1
      state: directory
      mode: 0755
-     owner: root
+     owner: ubuntu
