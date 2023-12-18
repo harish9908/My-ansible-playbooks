@@ -5,4 +5,4 @@
    - name: git clone
      git:
       repo: 'https://github.com/harish9908/Maven_Web_App01.git'
-      dest: /root/ansible
+      dest: /home/ubuntu
