@@ -5,5 +5,5 @@
   tasks:
   - name: Creating a file
     file:
-      path: /root/ansible/file1
+      path: /home/ubuntu/file1
       state: touch
