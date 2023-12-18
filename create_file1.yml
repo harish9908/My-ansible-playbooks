@@ -5,7 +5,7 @@
   tasks:
   - name: creating a file
     file:
-      path: /root/ansible/testfile.txt
+      path: /home/ubuntu/testfile.txt
       state: touch
       mode: 0777
-      owner: root
+      owner: ubuntu
